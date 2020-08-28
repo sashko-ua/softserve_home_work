@@ -27,7 +27,7 @@ btnOne.addEventListener('click', () => {
 });
 
 
-// __________TaskOne__________
+// __________TaskTwo__________
 
 const inputTwo = document.querySelector('#inputTwo'),
     btnTwo = document.querySelector('#btnTwo');
@@ -53,7 +53,7 @@ btnTwo.addEventListener('click', () => {
     alert(`Друга сторона ДНК: ${newDNA}`)
 });
 
-// __________TaskOne__________
+// __________TaskThree__________
 
 const inputThree = document.querySelector('#inputThree'),
     btnThree = document.querySelector('#btnThree');
@@ -66,26 +66,15 @@ btnThree.addEventListener('click', () => {
 
         wordsArr.forEach(item => {
             wordsLenght.push(item.length);
+            console.log(wordsLenght)
         });
         return Math.min(...wordsLenght);
+
+
     }
 
     findShort(inputThree.value)
 
-    console.log(findShort(inputThree.value))
-})
 
-
-let stringWithNum = prompt('Enter a string where words must contain one num between (1-9):');
-// const []
-
-function getOrderedString(numString) {
-    let strArr = numString.split(' ');
-    strArr.forEach(element => {
-        element.includes
-    });
-    console.log(strArr);
-
-}
-
-getOrderedString(stringWithNum);
+    alert(`Найколотше слово має ${findShort(inputThree.value)} літер(-и)`)
+});
