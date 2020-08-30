@@ -8,6 +8,7 @@ perentColors.addEventListener('click', (e) => {
     if (e.target && e.target.tagName == 'TD') {
         const bgColor = e.toElement.className;
 
+        bg.classList.remove(bgColor);
         bg.classList.add(bgColor);
 
         console.log(bg)
