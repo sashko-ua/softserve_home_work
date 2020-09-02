@@ -80,6 +80,9 @@ concat(arr, arr2);
 function concat(first, second) {
     first.forEach(item => {
         newArr.splice(newArr.length, 0, item);
+
+    });
+    second.forEach(item => {
         newArr.splice(newArr.length, 0, item);
     });
 }
