@@ -8,7 +8,7 @@ console.log('Map at Reduce');
 
 const map = fructs.reduce((acc, el) => [...acc, el[0]], []);
 
-console.log(fructs);
+console.log(map);
 console.log('');
 
 // __________Filter at Reduce__________
