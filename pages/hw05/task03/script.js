@@ -29,4 +29,6 @@ console.log('');
 
 // __________ForEach at Reduce__________
 
+console.log('ForEach at Reduce');
+
 fructs.reduce((acc, el, i) => console.log(`>>> ${++i}: ${el} <<<`), []);
