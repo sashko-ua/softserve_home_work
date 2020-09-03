@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Home Work 2</title>
+</head>
+
+<body>
+    <section class="taskOne">
+        <div class="container">
+            <h2>Task 1</h2>
+
+            <div class="taskOne__wrapper">
+                <div class="left">
+
+                    <div class="title">Введіть три значнння для стін</div> <br>
+
+
+                    <input id="height" type="number" min='1' max='1000' required placeholder="Висота">
+
+                    <input id="length" type="number" min='1' max='1000' placeholder="Довжина">
+
+                    <input id="width" type="number" min='1' max='1000' placeholder="Ширана">
+                </div>
+
+                <div class="right">
+
+                    <div class="title">Введіть загальні значення площі, <br> що не потрібно фарбувати</div>
+
+                    <input id="heightWithout" type="number" min='0' max='1000' required placeholder="Висота">
+
+                    <input id="lengthWithout" type="number" min='0' max='1000' placeholder="Ширина">
+                </div>
+            </div>
+
+            <button id="doneOne">Вирахувати</button>
+
+            <div class="text" id="answerOne"></div>
+            <div class="text" id="answerOneWithout"></div>
+        </div>
+    </section>
+
+    <section class="taskTwo">
+        <div class="container">
+            <h2>Task 2</h2>
+
+            <div class="text">Введіть через кому, ціни трьох видів піску</div>
+
+            <input type="text" id="capacity" placeholder="5, 45, 15">
+
+            <div class="text">Введіть через кому, об'єм трьох ємностей</div>
+
+            <input type="text" id="price" placeholder="42, 32, 5">
+
+            <button id="doneTwo">Вирахувати</button>
+
+            <div class="text" id="answerTwo"></div>
+        </div>
+    </section>
+
+    <section class="taskThree">
+        <div class="container">
+            <h2>Task3</h2>
+
+            <div class="text">Введить шість цифр вашого білета</div>
+
+            <input id="ticket" type="number" placeholder="123456">
+
+            <button id="doneThree">Перевірити</button>
+
+            <div class="text" id="answerThree"></div>
+        </div>
+    </section>
+
+    <section class="taskFour">
+        <div class="container">
+            <h2>Task 4</h2>
+
+            <div class="taskFour__wrapper">
+                <div class="column">
+                    <div class="taskFour1">
+                        <h3>Task 4-1</h3>
+                        <div class="text">Скільки тобі років?</div>
+                        <input type="number" id="inputFourOne">
+                        <button id="buttonFourOne">Натисни</button>
+                    </div>
+
+                    <div class="taskFour2">
+                        <h3>Task 4-2</h3>
+                        <div class="text">Введи чистло від 0 до 9</div>
+                        <input type="number" id="inputFourTwo">
+                        <button id="buttonFourTwo">Натисни</button>
+                    </div>
+
+                    <div class="taskFour3">
+                        <h3>Task 4-3</h3>
+                        <div class="text">Введи трьохзначне число</div>
+                        <input type="number" id="inputFourThree">
+                        <button id="buttonFourThee">Натисни</button>
+                    </div>
+
+                    <div class="taskFour4">
+                        <h3>Task 4-4</h3>
+                        <div class="text">Введи любий рік</div>
+                        <input type="number" id="inputFourFour">
+                        <button id="buttonFourFour">Натисни</button>
+                    </div>
+
+                    <div class="taskFour5">
+                        <h3>Task 4-5</h3>
+                        <div class="text">Введи пятизначне число</div>
+                        <input type="number" id="inputFourFive">
+                        <button id="buttonFourFive">Натисни</button>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="taskFour6">
+                        <h3>Task 4-6</h3>
+                        <div class="text">Введи к-ть доларів на обмін</div>
+                        <input type="number" id="inputFourSix">
+
+                        <button id="buttonFourSix">Натисни</button>
+
+                        <div class="radio">
+                            <div class="text">В яку валюту перевести?</div>
+                            <input type="radio" name="currency" id="uah">
+                            <label for="uah">UAH</label>
+
+                            <input type="radio" name="currency" id="eur">
+                            <label for="eur">EUR</label>
+
+                            <input type="radio" name="currency" id="gbp">
+                            <label for="gbp">GBR</label>
+                        </div>
+                    </div>
+
+                    <div class="taskFour7">
+                        <h3>Task 4-7</h3>
+                        <div class="text">Введи суму покупки</div>
+                        <input type="number" id="inputFourSeven">
+                        <button id="buttonFourSeven">Натисни</button>
+                    </div>
+
+                    <div class="taskFour8">
+                        <h3>Task 4-8</h3>
+                        <div class="text">Введи довжину кола</div>
+                        <input type="number" id="inputFourEightCircle">
+
+                        <div class="text">та периметр квадрата</div>
+                        <input type="number" id="inputFourEightSquare">
+
+                        <button id="buttonFourEight">Натисни</button>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="taskFour9">
+                        <h3>Task 4-9</h3>
+                        <div class="text">Правильна відповідь = 2 бала</div>
+
+                        <br> <br>
+
+                        <div class="tetx">Скільки годин сплять мурахи?</div>
+                        <input type="radio" name="ant" id="antFalse1">
+                        <label for="antFalse1">8 годин</label>
+                        <input type="radio" name="ant" id="antFalse2">
+                        <label for="antFalse2">2 години</label>
+                        <input type="radio" name="ant" id="antTrue">
+                        <label for="antTrue">Ніколи</label>
+
+                        <br> <br>
+
+                        <div class="tetx">Якого кольору молоко гіпопотама?</div>
+                        <input type="radio" name="hippo" id="hippoTrue">
+                        <label for="hippoTrue">Рожеве</label>
+                        <input type="radio" name="hippo" id="hippoFalse2">
+                        <label for="hippoFalse2">Біле</label>
+                        <input type="radio" name="hippo" id="hippoFalse1">
+                        <label for="hippoFalse1">Помаранчеве</label>
+
+                        <br> <br>
+
+                        <div class="tetx">Де у креветки серце?</div>
+                        <input type="radio" name="shrimp" id="shrimpFalse1">
+                        <label for="shrimpFalse1">Немає взагалі</label>
+                        <input type="radio" name="shrimp" id="shrimpFalse2">
+                        <label for="shrimpFalse2">В хвості</label>
+                        <input type="radio" name="shrimp" id="shrimpTrue">
+                        <label for="shrimpTrue">В голові</label>
+
+                        <br> <br>
+
+                        <button id="buttonFourNine">Натисни</button>
+                    </div>
+
+                    <div class="taskFour10">
+                        <h3>Task 4-10</h3>
+                        <div class="text">Введіть дату в форматі:</div>
+                        <input type="date" id="inputFourTen">
+                        <button id="buttonFourTen">Натисни</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
