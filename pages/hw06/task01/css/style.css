@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 50px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.taskOne {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+
+}
+
+.taskOne h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.taskOne .wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    margin: 25px auto 0;
+    border: 1px solid #000;
+}
+
+.taskOne .wrapper .square {
+    width: 10%;
+    height: 10%;
+    border: 1px solid #000;
+    margin: 0;
+    padding: 0;
+}
+
+.taskOne .btn {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    width: 125px;
+    height: 135px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}

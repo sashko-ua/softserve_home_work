@@ -1,0 +1,64 @@
+.taskTwo {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(164, 231, 125);
+}
+
+h3 {
+    font-size: 20px;
+    margin: 15px auto 25px;
+}
+
+.taskTwo h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.taskTwo__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.taskTwoStart,
+.check {
+    margin: 0 auto;
+    width: 25%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.taskWrapper {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 25px 0 0;
+    background-color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 25px;
+}
+
+.mathTask,
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    width: 100%;
+    height: 50%;
+}
+
+.answ {
+    margin: 25px auto;
+    width: 50%;
+    height: 50px;
+    padding: 0 0 0 25px;
+}
