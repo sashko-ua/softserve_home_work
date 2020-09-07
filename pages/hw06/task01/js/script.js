@@ -15,7 +15,7 @@ btn.addEventListener('click', () => {
             usedNums = [], //перевірка на повтори рандомних часел
             color;
 
-        const interval = setInterval(() => getRandomValue(maxIndex), 100);
+        const interval = setInterval(() => getRandomValue(maxIndex), 10);
 
         function getRandomValue(max) {
             color = randomColor(); //рандомний колір (плагін)`
@@ -35,6 +35,7 @@ btn.addEventListener('click', () => {
 
                 if (usedNums.length >= maxIndex) {
                     clearInterval(interval);
+                    console.log(usedNums);
                 };
 
             }
@@ -42,8 +43,6 @@ btn.addEventListener('click', () => {
 
         function fillColor() {
             squaresArr[index].setAttribute('style', `background: ${color}`); // встановлення рандомного кольору для дандомного квадрата
-
-            console.log(usedNums.length);
         }
     }
 });

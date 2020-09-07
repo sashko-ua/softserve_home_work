@@ -28,7 +28,7 @@ checkName.addEventListener('click', () => {
     function check(e) {
         if (e == '_') {
             console.log(e)
-            return e.replace(/[_]/, ' ');
+            return ' ';
         }
 
         if (isNaN(e)) {
