@@ -1,23 +1,38 @@
 // __________TwoOne__________
 
 const caseInput = document.querySelector('.input__case'),
-    caseBtn = document.querySelector('.btn__case');
+    resultCase = document.querySelector('.result__case');
 
-caseBtn.addEventListener('click', () => {
-    caseValue = caseInput.value.split('');
+document.querySelector('.btn__case').addEventListener('click', () => {
+    resultCase.textContent = '';
 
-    caseValue.forEach((element, index) => {
-        if (element == '-') {
+    const caseValue = caseInput.value.split('');
 
-            let a = caseValue[++index];
-            toString(a).toLocaleUpperCase();
-            console.log(a)
-        }
+    let chars = '';
 
-        return element
-    });
+    for (let i = 0; i < caseValue.length; i++) {
+        chars += (caseValue[i - 1] == '-') ? caseValue[i].toUpperCase() : caseValue[i];
+    }
 
-    console.log(caseValue)
+    let camelCase = chars.split('-').join('');
+
+    resultCase.textContent = `${camelCase}`;
 });
 
 // __________TwoTwo__________
+
+const abb = document.querySelector('.abb'),
+    resultAbb = document.querySelector('.result__abb');
+
+document.querySelector('.btn__abb').addEventListener('click', () => {
+
+    const abbValue = abb.value.split('');
+
+    let charsAbb = '';
+
+    for (let i = 0; i < abbValue.length; i++) {
+        charsAbb += (abbValue[i - 1] == null || abbValue[i - 1] == ' ' || abbValue[i - 1] == '-') ? abbValue[i].toUpperCase() : '';
+    }
+
+    resultAbb.textContent = `${charsAbb}`
+});
