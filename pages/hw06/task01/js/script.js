@@ -1,11 +1,9 @@
 'use strict';
 
-const btn = document.querySelector('.btn'),
-    squares = document.querySelectorAll('.square'),
-    squaresArr = Array.from(squares),
+const squaresArr = [...document.querySelectorAll('.square')],
     maxIndex = squaresArr.length;
 
-btn.addEventListener('click', () => {
+document.querySelector('.btn').addEventListener('click', () => {
     squaresArr.forEach(e => e.setAttribute('style', `background: #000`));
 
     changeColor();
@@ -20,15 +18,14 @@ btn.addEventListener('click', () => {
         function getRandomValue(max) {
             color = randomColor(); //рандомний колір (плагін)`
 
-            index = Math.floor(Math.random() * Math.floor(max)); //індекс рандомнго квадрата
+            index = Math.floor(Math.random() * max); //індекс рандомнго квадрата
             checkIndex();
         }
 
         function checkIndex() {
-            if (usedNums.find(e => e == index)) { // перевірка на повтор індекса
+            if (usedNums.find(e => e == index) > -1) { // перевірка на повтор індекса
                 getRandomValue(maxIndex);
             } else {
-                // usedNums.splice(index, 1); //Дискотека=)
                 usedNums.push(index);
 
                 fillColor();
@@ -37,7 +34,6 @@ btn.addEventListener('click', () => {
                     clearInterval(interval);
                     console.log(usedNums);
                 };
-
             }
         }
 

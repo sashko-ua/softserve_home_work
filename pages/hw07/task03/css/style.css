@@ -1,0 +1,61 @@
+.taskThree {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(58, 141, 209, 0.637);
+    padding: 50px;
+}
+
+.modal__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: rgb(143, 229, 150);
+    transform: translate(-50%, -50%);
+}
+
+.modal__btn:focus,
+.modal__btn:hover {
+    outline: none;
+    cursor: pointer;
+}
+
+.modal__window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, .3);
+}
+
+.moral__box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 450px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+
+.modal__close {
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    color: red;
+    font-weight: 700;
+    font-size: 35px;
+    cursor: pointer;
+}
