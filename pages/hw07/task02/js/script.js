@@ -1,10 +1,10 @@
 // __________TwoOne__________
 
 const caseInput = document.querySelector('.input__case'),
-    resultCase = document.querySelector('.result__case');
+    result = document.querySelector('.result');
 
 document.querySelector('.btn__case').addEventListener('click', () => {
-    resultCase.textContent = '';
+    result.value = '';
 
     const caseValue = caseInput.value.split('');
 
@@ -16,15 +16,19 @@ document.querySelector('.btn__case').addEventListener('click', () => {
 
     let camelCase = chars.split('-').join('');
 
-    resultCase.textContent = `${camelCase}`;
+    result.textContent = `${camelCase}`;
+});
+
+document.querySelector('.btn__caseClear').addEventListener('click', () => {
+    caseInput.value = ''
 });
 
 // __________TwoTwo__________
 
-const abb = document.querySelector('.abb'),
-    resultAbb = document.querySelector('.result__abb');
+const abb = document.querySelector('.abb');
 
 document.querySelector('.btn__abb').addEventListener('click', () => {
+    result.value = '';
 
     const abbValue = abb.value.split('');
 
@@ -34,5 +38,24 @@ document.querySelector('.btn__abb').addEventListener('click', () => {
         charsAbb += (abbValue[i - 1] == null || abbValue[i - 1] == ' ' || abbValue[i - 1] == '-') ? abbValue[i].toUpperCase() : '';
     }
 
-    resultAbb.textContent = `${charsAbb}`
+    result.textContent = `${charsAbb}`;
+});
+
+// __________TwoThree__________
+
+const link = document.querySelector('.link');
+
+document.querySelector('.btn__link').addEventListener('click', () => {
+
+    result.value = '';
+
+    const linkValue = link.value,
+        protocol = linkValue.split(/:\//),
+        domain = linkValue.split(/\//),
+        way = linkValue.split(/.com/);
+
+    result.innerHTML = `<div><b>Protocol</b>: ${protocol[0]};</div>
+                        <div><b>Domain</b>: ${domain[2]};</div>
+                        <div><b>Way</b>: ${way[1]};</div>`
+
 });
