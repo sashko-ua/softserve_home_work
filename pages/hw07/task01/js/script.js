@@ -47,7 +47,7 @@ const morseABC = {
         "(": "-.--.",
         ")": "-.--.-",
         "sos": "...---...",
-        " ": "",
+        // " ": "",
     },
     input = document.querySelector('.morze'),
     decoder = document.querySelector('.decoder'),
