@@ -47,20 +47,19 @@ const morseABC = {
         "(": "-.--.",
         ")": "-.--.-",
         "sos": "...---...",
-        // " ": "",
+        " ": "",
     },
     input = document.querySelector('.morze'),
-    decoder = document.querySelector('.decoder'),
     clear = document.querySelector('.clear'),
     normalText = document.querySelector('.decoderResult');
 
-decoder.addEventListener('click', () => {
-    let morzeWords = input.value.split(' ').flat(),
+document.querySelector('.decoder').addEventListener('click', () => {
+    let morzeWords = input.value.split(' '),
         result;
 
-    decoder(morzeWords);
+    decoderFunc(morzeWords);
 
-    function decoder(e) {
+    function decoderFunc(e) {
         result = e.map(element => {
             for (let key in morseABC) {
                 if (morseABC[key] == element) {
