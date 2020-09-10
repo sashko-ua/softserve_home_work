@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
-.title {
+.taskOne__title {
     text-align: center;
     font-size: 40px;
-    margin: 0 0 25px;
 }
 
 .taskOne {
-    padding: 50px;
+    padding: 10px 0;
     width: 100vw;
     height: 100vh;
-    /* background-color: #000; */
+    background-color: #000;
+    color: #fff;
+}
+
+.taskOne__text {
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 15px;
 }
 
 .squaresWrapper {
@@ -28,4 +34,16 @@
 .square {
     width: 10%;
     height: 10%;
+    border: 1px solid #000;
+}
+
+.btnStart {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+
 }

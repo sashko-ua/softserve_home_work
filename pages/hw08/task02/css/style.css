@@ -1,0 +1,50 @@
+.taskTwo {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    margin: 0 0 25px;
+}
+
+.carousel_wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.carousel_wrapper img {
+    width: 100%;
+}
+
+.prev,
+.next {
+    position: absolute;
+    font-size: 40px;
+    top: 45%;
+}
+
+.prev:hover,
+.next:hover {
+    color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.prev {
+    left: 15%;
+}
+
+.next {
+    right: 15%;
+}
+
+.slide {
+    display: none;
+}
+
+.slide_active {
+    display: block;
+}
