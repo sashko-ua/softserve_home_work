@@ -1,0 +1,25 @@
+.taskTwo {
+    height: 100vh;
+    width: 100vw;
+    padding: 50px;
+    background-color: rgb(206, 230, 121);
+}
+
+.taskTwo input,
+.taskTwo button {
+    padding: 15px;
+    margin: 15px 0;
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.taskTwo button {
+    padding: 0;
+}
+
+.taskTwo__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+}

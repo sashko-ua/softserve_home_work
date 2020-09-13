@@ -7,6 +7,17 @@
 // ■ метод, вычисляющий длину окружности.
 // Продемонстрировать работу свойств и методов.
 
+
+const input = document.querySelector('.taskThree__input'),
+    result = document.querySelector('.taskThree__result');
+
+
+document.querySelector('.taskThree__btn').addEventListener('click', () => {
+    let ring = new Circle(input.value);
+
+    result.innerHTML = `<div class="text">Радіус кола: ${ring.radius} см; <br> Діаметр кола: ${ring.diameter} см; <br> Площа кола: ${ring.area()} cм<sup>2</sup>; <br> Довдина кола: ${ring.length()} см;</div>`
+
+});
 class Circle {
     constructor(radius) {
         this.radius = radius;
@@ -27,10 +38,3 @@ class Circle {
         return (Math.PI * this.radius * 2).toFixed(2);
     }
 }
-
-let ring = new Circle(7);
-
-console.log(ring.radius);
-console.log(ring.diameter);
-console.log(ring.area());
-console.log(ring.length());
