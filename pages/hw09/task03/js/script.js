@@ -20,21 +20,21 @@ document.querySelector('.taskThree__btn').addEventListener('click', () => {
 });
 class Circle {
     constructor(radius) {
-        this.radius = radius;
+        this._radius = radius;
     }
     get radiusProp() {
-        this.radius;
+        this._radius;
     }
-    set radiusProp(radius) {
-        this.radius = radius;
+    set radiusProp(_radius) {
+        this._radius = _radius;
     }
     get diameter() {
-        return this.radius * 2;
+        return this._radius * 2;
     }
     area() {
-        return (Math.PI * this.radius * this.radius).toFixed(2);
+        return (Math.PI * this._radius * this._radius).toFixed(2);
     }
     length() {
-        return (Math.PI * this.radius * 2).toFixed(2);
+        return (Math.PI * this._radius * 2).toFixed(2);
     }
 }

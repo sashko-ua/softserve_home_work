@@ -27,19 +27,22 @@ class Marker {
     }
 
     print(line) {
+        resultText.style.color = this.color;
+        let resultStr = '';
+
         for (let i = 0; i < line.length; i++) {
             if (this.amount != 0) {
                 if (line[i] == " ") {
-                    this.amount += 0.5;
+                    this.amount -= line[i] == ' ' ? 0 : 0.5;
                 }
-                resultText.innerHTML += line[i];
-                resultText.style.color = this.color;
-                this.amount -= 0.5;
+
+                resultStr += line[i];
             } else {
-                resultText.innerHTML += '<br><br><div class="text">Чорнила закінчилися, дозаправ!</div> <hr>'
+                resultStr += '<br><br><div class="text">Чорнила закінчилися, дозаправ!</div> <hr>'
                 break
             }
         }
+        resultText.innerHTML = resultStr;
     }
 }
 
